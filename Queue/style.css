@@ -1,0 +1,166 @@
+ /* Module Cards - FIXED */
+        .Module_cards {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .Module_cards .card_container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .Module_cards .slider-container {
+            padding: 20px 0 80px;
+        }
+
+        .Module_cards .slider-wrapper {
+            padding: 0;
+        }
+
+        .Module_cards .swiper-slide {
+            display: flex;
+            justify-content: center;
+            height: auto;
+        }
+
+        .Module_cards .card_article {
+            position: relative;
+            overflow: hidden;
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .Module_cards .card_article:hover {
+            transform: translateY(-10px);
+            overflow: visible;
+        }
+
+        .Module_cards .image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+
+        .Module_cards .card_data {
+            background-color: #2429ad;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            position: absolute;
+            bottom: -130px;
+            left: 20px;
+            right: 20px;
+            opacity: 0;
+            transform: translateY(0);
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 24px rgba(36, 41, 173, 0.3);
+        }
+
+        .Module_cards .card_article:hover .card_data {
+            opacity: 1;
+            bottom: -70px;
+            transform: translateY(-10px);
+        }
+
+        .Module_cards .card_description {
+            display: block;
+            color: #e6f3ff;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .Module_cards .card_title {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .Module_cards .card_btn {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            background-color: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .Module_cards .card_btn:hover {
+            background-color: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Swiper Navigation Buttons */
+        .Module_cards .swiper-button-next,
+        .Module_cards .swiper-button-prev {
+            color: #2429ad !important;
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .Module_cards .swiper-button-next:after,
+        .Module_cards .swiper-button-prev:after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .Module_cards .swiper-button-next {
+            right: 10px;
+        }
+
+        .Module_cards .swiper-button-prev {
+            left: 10px;
+        }
+
+        .Module_cards .swiper-button-next:hover,
+        .Module_cards .swiper-button-prev:hover {
+            background: #2429ad;
+            color: white !important;
+        }
+
+        /* Swiper Pagination */
+        .Module_cards .swiper-pagination {
+            bottom: 20px !important;
+        }
+
+        .Module_cards .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .Module_cards .swiper-pagination-bullet-active {
+            background: #2429ad;
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .Module_cards .swiper-button-next,
+            .Module_cards .swiper-button-prev {
+                display: none;
+            }
+            
+            .Module_cards .card_article {
+                max-width: 300px;
+            }
+        }
